@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Bliss-Food for your taste</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="assets/images/logos/FavIcon.svg" type="image/x-icon">
+    <!-- faremwork of css -->
+    <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+    <!-- style sheet of css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive sheet of css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- fonts awsome icon link  -->
+    <link rel="stylesheet" href="assets/font-awesome-lib/icon/all.min.css">
+    <!-- swiper-slider link css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- animation of css -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+
+<body>
+    <section class="TopBar">
+        <div class="container">
+            <div class="d-flex justify-content-between w-100">
+                <div class="d-flex text-start align-items-start gap-lg-4 gap-2">
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="#">+123-456-7890</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="#">yummy@bistrobliss</a>
+                    </div>
+                </div>
+                <div class=" d-flex justify-content-center align-items-center gap-1">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======== 1.1 header section ======== -->
+    <header>
+        <nav class=" navbar navbar-expand-lg">
+            <div class="container">
+                <!-- site logo -->
+                <a class="nav-logo p-0 " href="index.html">
+                    <figure><img src="assets/images/logos/Logo.svg" alt="logo"></figure>
+                </a>
+                <div class="d-flex justify-content-between">
+                    <!-- navigation bar manu  -->
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul
+                            class="navbar-nav d-flex justify-content-center align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Menu</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link" href="#">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+                                    <li><a class="dropdown-item" href="ourteam.html">Team</a></li>
+                                    <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">FAQ's</a></li>
+                                    <li><a class="dropdown-item" href="404.html">404</a></li>
+                                    <li><a class="dropdown-item" href="comingsoon.html">Coming Soon</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="join-btn hover1 align-items-center" type="button"
+                    onclick="window.location.href='contact.html'">Book A Table</button>
+                <!-- navigation button  -->
+                <button class="open-aside" onclick="open_aside()" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <!--===== aside navigation slidebar =====-->
+        <aside>
+            <div id="mySidenav" class="right-sidbar">
+                <div class="side-nav-logo d-flex justify-content-between align-items-center  pe-1 nav-logo">
+                    <figure class="navbar-brand"><a href="index.html"><img src="assets/images/logos/Logo.svg"
+                                alt="logoimg"></a></figure>
+                    <button class="fa-solid fa-xmark" onclick="close_aside()"> </button>
+                </div>
+                <ul>
+                    <li class="nav-item">
+                        <a aria-current="page" href="index.html " class="active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center justify-content-between " id="slid-btn">
+                            <button class="a-slid page-btn">More<i class="fa-thin fa-plus"></i></button>
+                        </div>
+                        <ul id="slid-drop">
+                            <li><a href="ourteam.html">Team</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="faq.html">FAQ's</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="comingsoon.html">Coming Soon</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </header>
+    <!-- ========= End of 1.1 header section =========== -->
+    <!-- ========= 1.2 Hero section =========== -->
+    <section class="Hero">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center text-center gap-2">
+                <h1>Best food for your taste</h1>
+                <p>Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.</p>
+                <div class="d-flex gap-3">
+                    <div>
+                        <a href="#" class="hover2">Book A Table</a>
+                    </div>
+                    <div>
+                        <a href="#" class="hover1">Explore Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========= End of 1.2 Hero section =========== -->
+    <!-- bootstrap min javascript  -->
+    <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+    <!-- j Query -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- slick slider js -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+    <!-- animation from javascript -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1500,
+        });
+    </script>
+</body>
+
+</html>

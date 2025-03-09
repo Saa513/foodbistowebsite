@@ -1,0 +1,588 @@
+/* import font family is == Saira ==*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;700&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+/* =====  01. Reset  ====== */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+    background: #FFFFFF;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+button:focus {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+label {
+    font-weight: normal;
+}
+
+iframe {
+    width: 100%;
+}
+
+.fa-chevron-right {
+    margin-left: 5px;
+}
+
+/* =====  End of 01. Reset  ====== */
+/* ===== 02. Global Style ===== */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 90px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: 'DM Sans';
+}
+
+button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: 'DM Sans';
+    z-index: 0;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: 'DM Sans';
+    z-index: 0;
+    text-decoration: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+span {
+    font-family: 'Quicksand';
+}
+
+.active {
+    background: #DBDFD0;
+    padding: 4px 16px;
+    border-radius: 34px;
+}
+
+/*form validation massage */
+.validation {
+    position: fixed;
+    background-color: #AD343E;
+    text-align: center;
+    width: 35%;
+    padding: 75px 50px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    top: 24%;
+    z-index: 16;
+    border-radius: 10px;
+    display: none;
+    right: 31%;
+    box-shadow: 0px 5px 19px -3px #ffffff17;
+}
+
+.validation i {
+    padding: 26px 30px;
+    border-radius: 50%;
+    font-size: 50px !important;
+    color: rgba(255, 255, 255, 1);
+    background: #ffffff1a;
+}
+
+.validation h4 {
+    text-align: center;
+    color: #FFFFFFFF;
+    padding: 25px 0px 10px 0px;
+    text-transform: capitalize;
+}
+
+.validation h5 {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+#Succes-box {
+    position: fixed;
+    background-color: #AD343E;
+    text-align: center;
+    width: 60%;
+    padding: 103px 0;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    top: 29%;
+    z-index: 5;
+    border-radius: 25px;
+    display: none;
+    right: 20%;
+    color: #fff;
+}
+
+.hover1 {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid #2C2F24;
+    background-color: transparent;
+    border-radius: 118px;
+    color: #182226;
+    z-index: 1;
+    padding: 12px 24px;
+    transition: all 0.9s ease;
+    text-align: center;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.hover1:hover {
+    border: 1px solid #AD343E;
+    background-color: #AD343E;
+    color: #FFFFFF;
+}
+
+.hover2 {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #AD343E;
+    background-color: #AD343E;
+    color: #FFFFFF;
+    padding: 20px 32px;
+    z-index: 1;
+    font-size: 16px;
+    transition: all 0.9s ease;
+    text-align: center;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 118px;
+}
+
+.hover2:hover {
+    color: #FFFFFF !important;
+    border: 1px solid #2C2F24;
+    background: #2C2F24;
+}
+
+/* ===== End of 02. Global Style ===== */
+.TopBar {
+    background: #474747;
+    padding: 10px 0;
+}
+
+.TopBar .gap-lg-4 i {
+    color: #FFFFFF;
+}
+
+.TopBar .gap-lg-4 a {
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.TopBar .gap-1 a {
+    color: #ffffff;
+    background: #F9F9F71F;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TopBar a:hover {
+    color: #AD343E;
+}
+
+.TopBar .gap-1 a:hover {
+    background: #FFFFFF;
+    color: #AD343E;
+}
+
+/* ========= 1.1 header section ========= */
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    background: #FFFFFF;
+    padding-top: 20px;
+}
+
+header .navbar {
+    padding: 0px 0px 10px 0px;
+}
+
+header .nav-logo {
+    z-index: 3;
+}
+
+header .nav-link:hover {
+    color: #AD343E;
+}
+
+header .nav-logo img {
+    width: 211px;
+}
+
+header .navbar-collapse {
+    justify-content: center;
+}
+
+header .navbar-collapse ul li a:focus {
+    color: #2C2F24;
+
+}
+
+header .dropdown-menu:focus {
+    outline: none;
+}
+
+header .navbar-nav .nav-link.active,
+.navbar-nav .dropdown-menu li .active {
+    color: #2C2F24;
+    background-color: #DBDFD0;
+}
+
+header .right-sidbar {
+    width: 280px;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: -355px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 20px 10px;
+    z-index: 99;
+    background: #FFFFFF;
+}
+
+header .open-aside {
+    display: none;
+    z-index: 2;
+    position: relative;
+}
+
+header aside .fa-xmark {
+    padding: 8px 11px;
+    background-color: #AD343E;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    font-size: 22px;
+    border-radius: 12px;
+}
+
+header aside .fa-xmark:hover {
+    color: #1D3557;
+    background-color: #fff;
+    border: 1px solid #AD343E;
+}
+
+header aside .fa-caret-down {
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+header aside .fa-caret-down:hover {
+    color: #AD343E;
+}
+
+header aside a {
+    color: #2C2F24;
+}
+
+header aside a:hover {
+    color: #AD343E;
+}
+
+header #slid-drop {
+    display: none;
+}
+
+header aside li {
+    padding: 12px;
+}
+
+header #slid-drop li {
+    padding: 12px 0px;
+}
+
+header .right-sidbar a .active,
+.right-sidbar a .active:hover {
+    color: #1D3557;
+}
+
+header .aside-dropdwon {
+    display: block !important;
+    padding: 10px 0 0 0;
+}
+
+header .dropdown-item:hover {
+    color: #AD343E;
+}
+
+header .page-btn {
+    padding: 0px;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+header .page-btn:hover {
+    color: #AD343E;
+}
+
+header .navbar ul li a {
+    color: #1D3557;
+}
+
+header .dropdown ul {
+    width: 200px;
+    padding: 10px 0 20px;
+    left: -153%;
+}
+
+header .dropdown-menu {
+    transition: transform 2.3s ease;
+    padding: 0px;
+    background: #FFFFFF;
+}
+
+header .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+header .dropdown ul li a {
+    color: #1D3557;
+}
+
+header .dropdown ul li {
+    padding: 10px 0 5px;
+}
+
+header .dropdown ul li a:hover {
+    background-color: transparent;
+}
+
+header .join-btn {
+    margin: 0px 0 0 40px;
+}
+
+header .open-aside {
+    padding: 9px 11px;
+    background-color: #AD343E;
+    border: 1px solid #AD343E;
+    border-radius: 0px;
+    font-size: 25px;
+    color: #FFFFFF;
+    border-radius: 12px;
+}
+
+header .open-aside:hover {
+    color: #1D3557;
+    background-color: #fff;
+    border: 1px solid #AD343E;
+
+}
+
+/* ========= End of 1.1 header section ========= */
+/* ========= 1.2 Hero section ========= */
+.Hero {
+    background-image: url('../images/index/Hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.Hero .text-center {
+    padding: 400px 200px 100px;
+}
+
+.Hero h1 {
+    color: #2C2F24;
+}
+
+.Hero p {
+    color: #2C2F24;
+    padding: 25px 185px;
+}
+
+.Hero .hover1 {
+    padding: 20px 32px;
+}
+
+/* ========= End of 1.2 Hero section ========= */
